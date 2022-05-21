@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="day11.testngsamples.Example8"/>
+      <class name="day11.testngsamples.Example6"/>
+      <class name="day11.testngsamples.Example7"/>
+      <class name="day11.testngsamples.Example_Param7"/>
+      <class name="day11.testngsamples.Example_Annotations3"/>
+      <class name="day11.testngsamples.Example_Param6"/>
+      <class name="day11.testngsamples.Example_Param5"/>
+      <class name="day11.testngsamples.Example_Param4"/>
+      <class name="day11.testngsamples.Example71"/>
+      <class name="day11.testngsamples.Example_Annotations1"/>
+      <class name="day11.testngsamples.Example_Annotations2"/>
+      <class name="day11.testngsamples.Sample1"/>
+      <class name="day11.testngsamples.Example_Param3"/>
+      <class name="day11.testngsamples.Example1"/>
+      <class name="day11.testngsamples.Example_Param2"/>
+      <class name="day11.testngsamples.Example_Param1"/>
+      <class name="day11.testngsamples.Example4"/>
+      <class name="day11.testngsamples.Example5"/>
+      <class name="day11.testngsamples.Example2"/>
+      <class name="day11.testngsamples.Sample2"/>
+      <class name="day11.testngsamples.Example3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
