@@ -13,7 +13,7 @@ public class FileUpload {
 
 	@Test
 	public void testCase() {
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().version("101.0.4951.41").setup();
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

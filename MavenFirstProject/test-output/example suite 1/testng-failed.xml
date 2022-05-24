@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [example suite 1]">
+  <test name="UnitTestingTestSuite(failed)">
+    <classes>
+      <class name="day22.testngadvxml.Parameterization">
+        <methods>
+          <include name="testCaseOne"/>
+          <include name="testLoginOfVtiger"/>
+          <include name="testCaseTwo"/>
+          <include name="testCaseThree"/>
+        </methods>
+      </class> <!-- day22.testngadvxml.Parameterization -->
+    </classes>
+  </test> <!-- UnitTestingTestSuite(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->

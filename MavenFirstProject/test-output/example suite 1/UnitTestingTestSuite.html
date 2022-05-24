@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>TestNG:  UnitTestingTestSuite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UnitTestingTestSuite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/4</td>
+</tr><tr>
+<td>Started on:</td><td>Sat May 07 08:54:20 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38335 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.setData()'><b>setData</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: admin, admin</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.setData()'><b>setData</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.setData()'><b>setData</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: guestuser3, pass123</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+<tr>
+<td title='day22.testngadvxml.GroupExamples.testCaseFive()'><b>testCaseFive</b><br>Test class: day22.testngadvxml.GroupExamples</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.GroupExamples@3abbfa04</td></tr>
+<tr>
+<td title='day22.testngadvxml.GroupExamples.testCaseFour()'><b>testCaseFour</b><br>Test class: day22.testngadvxml.GroupExamples</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.GroupExamples@3abbfa04</td></tr>
+<tr>
+<td title='day22.testngadvxml.GroupExamples.testCaseOne()'><b>testCaseOne</b><br>Test class: day22.testngadvxml.GroupExamples</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.GroupExamples@3abbfa04</td></tr>
+<tr>
+<td title='day22.testngadvxml.ParallelExecutionOfMethods.testCaseOne()'><b>testCaseOne</b><br>Test class: day22.testngadvxml.ParallelExecutionOfMethods</td>
+<td></td>
+<td>3</td>
+<td>day22.testngadvxml.ParallelExecutionOfMethods@57fffcd7</td></tr>
+<tr>
+<td title='day22.testngadvxml.GroupExamples.testCaseThree()'><b>testCaseThree</b><br>Test class: day22.testngadvxml.GroupExamples</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.GroupExamples@3abbfa04</td></tr>
+<tr>
+<td title='day22.testngadvxml.GroupExamples.testCaseTwo()'><b>testCaseTwo</b><br>Test class: day22.testngadvxml.GroupExamples</td>
+<td></td>
+<td>0</td>
+<td>day22.testngadvxml.GroupExamples@3abbfa04</td></tr>
+<tr>
+<td title='day22.testngadvxml.ParallelExecutionOfMethods.testCaseTwo()'><b>testCaseTwo</b><br>Test class: day22.testngadvxml.ParallelExecutionOfMethods</td>
+<td></td>
+<td>8</td>
+<td>day22.testngadvxml.ParallelExecutionOfMethods@57fffcd7</td></tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.testLoginOfVtiger()'><b>testLoginOfVtiger</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: chrome, admin, Test@123</td>
+<td></td>
+<td>11</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.testLoginOfVtiger()'><b>testLoginOfVtiger</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: chrome, pass123, admin</td>
+<td></td>
+<td>7</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+<tr>
+<td title='day22.testngadvxml.DataProviderExample.testLoginOfVtiger()'><b>testLoginOfVtiger</b><br>Test class: day22.testngadvxml.DataProviderExample<br>Parameters: chrome, , </td>
+<td></td>
+<td>6</td>
+<td>day22.testngadvxml.DataProviderExample@f6c48ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='day22.testngadvxml.Parameterization.testCaseOne()'><b>testCaseOne</b><br>Test class: day22.testngadvxml.Parameterization</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testCaseOne but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1074844820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074844820'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testCaseOne but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>day22.testngadvxml.Parameterization@31ef45e3</td></tr>
+<tr>
+<td title='day22.testngadvxml.Parameterization.testCaseThree()'><b>testCaseThree</b><br>Test class: day22.testngadvxml.Parameterization</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testCaseThree but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace404586280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace404586280'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testCaseThree but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>day22.testngadvxml.Parameterization@31ef45e3</td></tr>
+<tr>
+<td title='day22.testngadvxml.Parameterization.testCaseTwo()'><b>testCaseTwo</b><br>Test class: day22.testngadvxml.Parameterization</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method testCaseTwo but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1229184766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1229184766'><pre>org.testng.TestNGException: 
+Parameter &apos;username&apos; is required by @Test on method testCaseTwo but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>day22.testngadvxml.Parameterization@31ef45e3</td></tr>
+<tr>
+<td title='day22.testngadvxml.Parameterization.testLoginOfVtiger()'><b>testLoginOfVtiger</b><br>Test class: day22.testngadvxml.Parameterization</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testLoginOfVtiger but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800497654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800497654'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Test on method testLoginOfVtiger but has not been marked @Optional or defined
+in F:\GitAutomation\13thJan-2022\MavenFirstProject\src\test\resources\avdvanceXml\executeEntirePackage.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>day22.testngadvxml.Parameterization@31ef45e3</td></tr>
+</table><p>
+</body>
+</html>

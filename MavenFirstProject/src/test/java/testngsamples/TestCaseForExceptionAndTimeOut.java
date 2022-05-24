@@ -1,6 +1,5 @@
 package testngsamples;
 
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class TestCaseForExceptionAndTimeOut {

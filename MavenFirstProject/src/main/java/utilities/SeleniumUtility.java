@@ -8,6 +8,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +30,7 @@ public class SeleniumUtility {
 	protected static FileInputStream fis;
 	protected static String filePath;
 	protected static WebDriverWait wait;
+	protected static JavascriptExecutor js;
 	/**
 	 * using this method we can load our property and also open desired browser
 	 */
@@ -45,7 +47,7 @@ public class SeleniumUtility {
 			e.printStackTrace();
 		}
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().version("101.0.4951.41").setup();
 			//System.setProperty("webdriver.chrome.driver", ".\\executables\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("firefox")) {
@@ -61,6 +63,7 @@ public class SeleniumUtility {
 		driver.get(appUrl);
 		wait =new WebDriverWait(driver, 60);
 		action = new Actions(driver);
+		js = (JavascriptExecutor)driver;
 		return driver;
 	}
 
@@ -241,6 +244,14 @@ public class SeleniumUtility {
 	public void waitForElementToBeClickable(WebElement element) {
 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
+	public void scrollUsingJS(int h,int v) {
+		js.executeScript("window.scrollBy("+h+","+v+")");
+	}
+	
+	public void scrollTillPageEndUsingJS(int h,int v) {
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
 
 	public void cleanUp() {

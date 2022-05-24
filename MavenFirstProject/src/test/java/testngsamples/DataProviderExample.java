@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import utilities.SeleniumUtility;
 
 public class DataProviderExample extends SeleniumUtility {

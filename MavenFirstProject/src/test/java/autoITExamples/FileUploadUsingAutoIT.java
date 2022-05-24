@@ -16,6 +16,7 @@ public class FileUploadUsingAutoIT extends SeleniumUtility{
 	@Test
 	public void testCase() throws IOException {
 		WebDriver driver=setUp("chrome", "http://omayo.blogspot.com/");
+		
 		//in selenium we can't click on browse button/choose file button instead of you pass the required file name in sendKeys()
 		driver.findElement(By.xpath("//body")).sendKeys(Keys.chord(Keys.COMMAND, Keys.END));
 
