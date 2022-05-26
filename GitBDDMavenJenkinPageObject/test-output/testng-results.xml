@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="59144" started-at="2022-05-26T07:59:15 IST" finished-at="2022-05-26T08:00:14 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7a30d1e6]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="59144" started-at="2022-05-26T07:59:15 IST" finished-at="2022-05-26T08:00:14 IST">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@7a30d1e6]" name="setUpClass" is-config="true" duration-ms="155" started-at="2022-05-26T07:59:15 IST" finished-at="2022-05-26T07:59:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7a30d1e6]" name="runScenario" duration-ms="17176" started-at="2022-05-26T07:59:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T07:59:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search 'selenium interview questions' in Google"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Perform Google Search based on requirement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7a30d1e6]" name="runScenario" duration-ms="13541" started-at="2022-05-26T07:59:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T07:59:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Selenium 3.0 in Google search page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Perform Google Search based on requirement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7a30d1e6]" name="runScenario" duration-ms="13006" started-at="2022-05-26T07:59:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T07:59:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Selenium 4.0 in Google search page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Perform Google Search based on requirement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper,cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@7a30d1e6]" name="runScenario" duration-ms="15155" started-at="2022-05-26T07:59:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-26T08:00:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search selenium interview questions in Google search page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Perform Google Search based on requirement"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@7a30d1e6]" name="tearDownClass" is-config="true" duration-ms="28" started-at="2022-05-26T08:00:14 IST" finished-at="2022-05-26T08:00:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
